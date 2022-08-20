@@ -15,30 +15,30 @@
 
     <div id="calculation">
       <h2>MONATSGEHALT BERECHNEN</h2>
+      
       <div class="hourly-wage-container">
         <label for="hourly-wage">Derzeitiger Stundenlohn (brutto)</label>
-        <div>
+        <div class="input-row">
           <button><span class="rotate">^</span></button>
           <input id="hourly-wage" type="number" placeholder="10,45" step="0.01">
           <button><span>^</span></button>
           <p>Euro</p>
         </div>
-        
       </div>
-      <div class="second-value-container">
+      <div class="working-time-container">
         <label for="working-time">Arbeitszeit pro Woche</label>
-        <div>
-          <button><span class="rotate">^</span></button>
-          <input id="working-time" type="number" placeholder="40" step="0.1">
-          <button><span>^</span></button>
-          <p>Stunden</p>
+        <div class="input-row">
+            <button><span class="rotate">^</span></button>
+            <input id="working-time" type="number" placeholder="40" step="0.1">
+            <button><span>^</span></button>
+            <p>Stunden</p>
         </div>  
       </div>
     </div>
 
     <div id="result">
       <p>Ihr aktuelles Monatsgehalt (brutto)</p>
-      <p>= 1.820,00 €</p>
+      <p id="monthly-salary">= 1.820,00 €</p>
       <p>0 Euro unter dem Mindestlohn</p>
       <p>Dieses Monatsgehalt entspricht dem [gerundeten] Mindestlohn, der seit dem 1. Juli 2022 gilt.</p>
     </div>

@@ -7,6 +7,7 @@ body {
   background-color: #bfdbf7; 
   display: flex;
   border-radius: 0 0 40px 0;
+  width: 50%;
 }
 
 h1 {
@@ -15,8 +16,7 @@ h1 {
 }
 
 #calculation {
-  width: 50%;
-  flex-grow: 1;
+  width: 40%;
   padding: 20px;
 }
 
@@ -24,23 +24,23 @@ h2 {
   font-size: 1em;
 }
 
-.first-value-container {
-  padding: 20px 0 20px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.hourly-wage-container {
+  padding-top: 20px;
 }
 
-.second-value-container {
-  padding: 20px 0 20px 0;
+.working-time-container {
+  padding: 30px 0 20px 0;
+}
+
+.input-row {
   display: flex;
-
-
+  flex-direction: row;
+  margin-top: 15px;
 }
 
 input {
-  margin-top: 15px;
-  height: 30px;
+  height: 31px;
+  align-items: flex-start;
 }
 
 input::placeholder {
@@ -49,15 +49,20 @@ input::placeholder {
   text-align: center;
 }
 
+p {
+  margin-left: 10px;
+}
+
 /* Button-Styling */
 
 button {
-  height: 30px;
+  height: 36px;
 }
 
 button span {
   color: #00296b;
   font-size: 30px;
+  height: 100%;
 }
 
 .rotate {
@@ -69,6 +74,15 @@ button span {
 /* Result-area */
 
 #result {
-  width: 50%;
-  flex-grow: 1;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#result p {
+  width: 80%;
+}
+#monthly-salary {
+  font-size: 1.7em;
 }
